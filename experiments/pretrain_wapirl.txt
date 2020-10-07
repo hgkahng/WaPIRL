@@ -17,6 +17,6 @@
 --checkpoint_root ./checkpoints
 --write_summary
 --save_every 10
---projector_type mlp
+--projector_type linear
 --projector_size 128
 --temperature 0.07
