@@ -1,0 +1,21 @@
+--data wm811k
+--input_size 96
+--augmentation test
+--backbone_type resnet
+--backbone_config 18
+--decouple_input
+--epochs 100
+--batch_size 256
+--num_workers 4
+--gpus 0
+--optimizer sgd
+--learning_rate 0.01
+--weight_decay 0.001
+--momentum 0.9
+--scheduler cosine
+--warmup_steps 0
+--checkpoint_root ./checkpoints
+--write_summary
+--label_proportion 1.00
+--label_smoothing 0.1
+--dropout 0.5

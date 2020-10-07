@@ -1,0 +1,22 @@
+--data wm811k
+--input_size 96
+--augmentation crop
+--backbone_type resnet
+--backbone_config 18
+--decouple_input
+--epochs 100
+--batch_size 256
+--num_workers 4
+--gpus 0
+--optimizer sgd
+--learning_rate 1e-2
+--weight_decay 1e-3
+--momentum 0.9
+--scheduler cosine
+--warmup_steps 0
+--checkpoint_root ./checkpoints
+--write_summary
+--save_every 10
+--projector_type mlp
+--projector_size 128
+--temperature 0.07
