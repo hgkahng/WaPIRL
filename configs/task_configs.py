@@ -112,8 +112,8 @@ class ConfigBase(object):
     def data_parser() -> argparse.ArgumentParser:
         """Returns an `argparse.ArgumentParser` instance containing data-related arguments."""
         parser = argparse.ArgumentParser("Data", add_help=False)
-        parser.add_argument('--data', type=str, choices=('wm811k', 'cifar10', 'stl10', 'imagenet'), required=True)
-        parser.add_argument('--input_size', type=int, choices=(32, 64, 96, 112, 224), required=True)
+        parser.add_argument('--data', type=str, default='wm811k')
+        parser.add_argument('--input_size', type=int, default=96)
         parser.add_argument('--augmentation', type=str, default='test', required=True)
         return parser
 
