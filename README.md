@@ -86,7 +86,7 @@ python run_classification.py \
     --pretrained_model_type wapirl \
     --label_proportion 1.00 \
     --label_smoothing 0.1 \
-    --dropout 0.5 \
+    --dropout 0.5
 ```
 - IMPORTANT: Provide the correct path for the `pretrained_model_file` argument.
 - Run ```python run_classification.py --help``` for more information on arguments.
